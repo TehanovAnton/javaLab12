@@ -1,0 +1,26 @@
+<!--
+  Created by IntelliJ IDEA.
+  User: Anton
+  Date: 20.05.2021
+  Time: 19:52
+  To change this template use File | Settings | File Templates.
+-->
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page"
+          xmlns="http://www.w3.org/1999/xhtml" version="2.0"
+          xmlns:x="http://java.sun.com/jsp/jstl/xml">
+    <html>
+    <head><title>Title</title></head>
+    <body>
+        <x:parse var="doc"/>
+        <x:forEach select="$doc/students/student" var="stud">
+            Name:
+                <x:out select="$stud/name"/><br/>
+            LogIn:
+                <x:out select="$stud/@login"/><br/>
+            Faculty:
+                <x:out select="$stud/@faculty"/><br/>
+            <hr/><br/>
+        </x:forEach>
+    </body>
+    </html>
+</jsp:root>

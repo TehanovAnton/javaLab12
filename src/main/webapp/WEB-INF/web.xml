@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>formatting_tags</servlet-name>
+        <jsp-file>/formatting_jstl_tags/formatting_tags.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>formatting_tags</servlet-name>
+        <url-pattern>/formatting_tags</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>formatNumbers</servlet-name>
+        <jsp-file>/formatting_jstl_tags/formatNumbers.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>formatNumbers</servlet-name>
+        <url-pattern>/formatNumbers</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>sql_tags</servlet-name>
+        <jsp-file>/sql_jstl_tags/sql_tags.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>sql_tags</servlet-name>
+        <url-pattern>/sql_tags</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>xml_tags</servlet-name>
+        <jsp-file>/xml_jstl_tags/xml_tags.jspx</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>xml_tags</servlet-name>
+        <url-pattern>/xml_tags</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>jsp_xml_tags</servlet-name>
+        <jsp-file>/xml_jstl_tags/xml_tags.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>jsp_xml_tags</servlet-name>
+        <url-pattern>/jsp_xml_tags</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>customtagsDemonstraition</servlet-name>
+        <jsp-file>/custom_tags/custom_tg.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>customtagsDemonstraition</servlet-name>
+        <url-pattern>/customtagsDemonstraition</url-pattern>
+    </servlet-mapping>
+
+    <jsp-config>
+        <taglib>
+            <taglib-uri>ent_reg</taglib-uri>
+            <taglib-location>/WEB-INF/tdl/EnterRegister.tld</taglib-location>
+        </taglib>
+        
+        <taglib>
+            <taglib-uri>que_tab</taglib-uri>
+            <taglib-location>/WEB-INF/tdl/QueryTable.tld</taglib-location>
+        </taglib>
+    </jsp-config>
+</web-app>
